@@ -1,0 +1,68 @@
+.top_bar {
+        FONT-FAMILY: tahoma; COLOR: #c6ccdb; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.login {
+        FONT-FAMILY: tahoma; COLOR: #05225c; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.client_zone {
+        FONT-FAMILY: Verdana; COLOR: #05225c; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.white {
+        FONT-FAMILY: verdana; COLOR: black; FONT-SIZE: 11px
+}
+.news {
+        COLOR: black; FONT-SIZE: 10px
+}
+a.nnbtitle {
+        font-weight: bold;
+        color: #4E6D8C;
+        font-size: 11px;
+        font-family: tahoma;
+        text-decoration: none;
+}
+a.nnbtitle:hover {
+        color: #8BB3DA;
+        font-weight: bold;
+        font-size: 11px;
+        font-family: tahoma;
+        text-decoration: none;
+        }
+A.nnbsub {
+        FONT-FAMILY: tahoma; COLOR: #4e6d8c; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.nnbsub:hover {
+        FONT-FAMILY: tahoma; COLOR: #336699; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+BODY {
+        FONT-FAMILY: tahoma; COLOR: #00366d; FONT-SIZE: 12px
+}
+TD {
+        FONT-FAMILY: tahoma; COLOR: #00366d; FONT-SIZE: 12px
+}
+A {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-FAMILY: verdana; COLOR: #05225c; FONT-SIZE: 11px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+A:hover {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-FAMILY: verdana; COLOR: #6495ED; FONT-SIZE: 11px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+A IMG {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+A.lang {
+        COLOR: #c6ccdb; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.lang:hover {
+        COLOR: White; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.menu {
+        FONT-FAMILY: tahoma; COLOR: #4e6d8c; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.menu_left {
+        TEXT-ALIGN: left
+}
+A.topnews {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-FAMILY: verdana; COLOR: #05225c; FONT-SIZE: 11px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+A.topnews IMG {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}

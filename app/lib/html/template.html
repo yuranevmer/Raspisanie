@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+    <meta name="format-detection" content="telephone=no" >
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+   
+   
+   
+   	<link href="i/eltrain2.css" type="text/css" rel="stylesheet" />
+	<link href="i/style.css" type="text/css" rel="stylesheet" />
+
+ 	<style>
+ 		.ppix {
+ 			height: 1px;
+ 			position: absolute;
+ 		}
+ 		.ppix2 {
+ 			height: 3px;
+ 			position: absolute;
+ 		}
+ 		.left2 {
+ 			position: absolute;
+ 			left: 0px;
+ 			top: 0px;
+ 		}
+ 		
+ 	</style>
+   
+   
+    <script type="text/javascript">
+        function getContentHeight(){
+            return document.body.scrollHeight;
+        }
+        var fsize = 16;
+        function setFont(size){
+            var el = document.getElementById('content');
+            var el2 = document.getElementById('desc');
+            var newsize = size;
+            el.style.fontSize = newsize.toFixed(0) + "px";
+            el2.style.fontSize = newsize.toFixed(0) + "px";
+            return el.offsetHeight; 
+            //document.body.scrollHeight;
+        }
+    </script>
+  </head>
+    
+<body>
+	<div style="background-color: black">{{table-content}}</div>
+	
+	
+	    
+</body>
+</html>

@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="root" class="container">
+		<Button id="cancelButton" title="Отмена" top="20" left="10" onClick="close"></Button>
+		<Button id="saveButton" title="Сохранить" top="20" right="10" onClick="save"></Button>
+		<View top="140" layout="horizontal">
+			<Picker id="picker" selectionIndicator="true">
+				
+			</Picker>
+		</View>	
+	</Window>
+</Alloy>

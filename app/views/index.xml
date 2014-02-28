@@ -1,5 +1,30 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+	<Window id="root" class="container">
+		<View id="holder">
+			<View id="bar" height="44" top="0">
+				<Button id="switchButton" titleid="switch_direction" onClick="switchDirection" left="0"/>
+				<Button id="settingsButton" title="Se" right="10" onClick="openSettings"/>
+			</View>
+			<ScrollableView id="sv" top="44" scrollingEnabled="false">
+				<WebView id="web1"></WebView>
+				<WebView id="web2"></WebView>
+			</ScrollableView>
+		</View>
 	</Window>
 </Alloy>
+	
+	<!--TabGroup>
+		<Tab title="Туды">
+			<Window id="win1" class="container">
+				<WebView id="web1" disableBounce="true"></WebView>
+			</Window>
+		</Tab>
+		<Tab title="Сюды">
+			<Window class="container" id="win2">
+				<WebView id="web2" disableBounce="true"></WebView>
+			</Window>
+		</Tab>
+		<Tab title="Настройки">
+			<Require id="settings" src="Settings/Settings"></Require>
+		</Tab>
+	</TabGroup-->

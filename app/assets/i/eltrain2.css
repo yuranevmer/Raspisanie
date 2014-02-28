@@ -1,0 +1,57 @@
+
+form { margin-top: 1px;        margin-bottom: 1px;}
+TD.gt {
+        background-color: white;
+        text-align: center;
+}
+TD.gt_b {
+        background-color: white;
+        text-align: center;
+        font-weight: bold;
+}
+TD.gt1 {
+        background-color: #EEEEEE;
+        text-align: center;
+}
+TD.gt_b1 {
+        background-color: #EEEEEE;
+        text-align: center;
+        font-weight: bold;
+}
+.sh {
+        background-color: #e3f2ff;
+        text-align: center;
+}
+td.sh2 { text-align:center;
+        height:22px;
+        background-color:#A3CAF1; 
+		  font-weight: bold; 
+		  font-size: 14px; 
+		  color:white;
+		   background-image: url(main_mm.gif);
+    background-repeat: repeat-x;
+	  }	
+td.sh_line { background-color:#94C1EF;}
+	  
+.button { height: 20px;
+          width: 100px;
+          font-family: verdana;
+          font-weight: bold;
+          font-size: 12px;
+          color: #336699;
+          border : 1px solid Gray;
+}
+.find {
+        border-style: inset;
+        border-width: 1px;
+        background: #ffffff;
+        font-size: 8pt;
+}
+.inpDate { padding:2px 4px; border:1px solid #333; border-right:1px solid #CCC; border-bottom:1px solid #CCC;width:96px; background:#FFF url(bcg-dp.gif) no-repeat 100% 50%; }
+ 
+td.q1 {text-align:center; height:18px}
+td.q0 {text-align:center; font-weight:bold; height:18px}
+tr.on        {color:black;}
+tr.onx       {background-color: #e3f2ff;}
+tr.pix {height:1; background-color:#94C1EF;}
+tr.pix2 {height:2; background-color:#94C1EF;}
