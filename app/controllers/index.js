@@ -2,10 +2,23 @@
 function switchDirection(){
     if ($.sv.currentPage == 0) {
         $.sv.scrollToView(1);
+        _setDirectionText(true);
     } else {
         $.sv.scrollToView(0);
+        _setDirectionText(false);
     }
 };
+
+
+function _setDirectionText(reverse){
+    var dir = Ti.App.Properties.getString("direction_name","Київ - Тетерів");
+    
+    if (reverse){
+        //reverse
+        dir = dir.split(" - ").reverse().join(" - ");
+    }
+    $.directionLabel.text = dir;
+}
 
 function openSettings(){
     var c = Alloy.createController("Settings/Settings",{});
@@ -25,6 +38,7 @@ function openSettings(){
      } else {
          loadAndCache();
      }
+     _setDirectionText(false);
 })();
 
 
@@ -32,13 +46,15 @@ Ti.App.addEventListener("settings:reload", function(e){
    loadAndCache(); 
 });
 
+function refresh() {
+    Ti.App.fireEvent("settings:reload");
+}
 
 
 
 
 function loadAndCache() {
     loadContent(function(e){
-        Ti.API.info('e=',e);
         var output1 = prepareContent(e.content1);
         var output2 = prepareContent(e.content2);
         
@@ -61,7 +77,6 @@ function loadAndCache() {
 
 function loadContent(callback) {
     var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory + "/html/", "parcer.html");
-    Ti.API.info('file', file.exists());
     var output = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "parcer.html");
     if (!output.exists()) {
         output.createFile();
@@ -78,9 +93,10 @@ function loadContent(callback) {
     $.root.add(webView);
     Ti.App.addEventListener("parcer:loaded", onLoad);
     function onLoad(e){
-        alert("load event")
         $.root.remove(webView);
-        webView = null;
+        setTimeout(function(){
+            //webView = null;
+        },100);
         //alert(e);
         callback(e);
     }

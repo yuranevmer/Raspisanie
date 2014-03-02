@@ -1,11 +1,15 @@
 <Alloy>
 	<Window id="root" class="container">
 		<View id="holder">
-			<View id="bar" height="44" top="0">
-				<Button id="switchButton" titleid="switch_direction" onClick="switchDirection" left="0"/>
-				<Button id="settingsButton" title="Se" right="10" onClick="openSettings"/>
+			<View id="bar" height="50" top="0">
+				<Button id="switchButton" onClick="switchDirection"/>
+				<Button id="settingsButton" onClick="openSettings"/>
+				<Button id="refreshButton" onClick="refresh"/>
 			</View>
-			<ScrollableView id="sv" top="44" scrollingEnabled="false">
+			<View height="30" top="50" backgroundColor="gray">
+				<Label id="directionLabel"/>
+			</View>
+			<ScrollableView id="sv" top="80" scrollingEnabled="false">
 				<WebView id="web1"></WebView>
 				<WebView id="web2"></WebView>
 			</ScrollableView>

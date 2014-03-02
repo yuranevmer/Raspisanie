@@ -18,7 +18,7 @@ if (!dataFolder.exists()) {
     dossier.copy(resFolder.nativePath, dataFolder.nativePath);
     
     var j = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory+ "/html/", "jquery-2.1.0.min.js");
-    var o = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "jquery.js");
+    var o = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "jquery-2.1.0.min.js");
     if (!o.exists()) {
         o.createFile();
         o.write(j);

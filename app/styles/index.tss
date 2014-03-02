@@ -1,3 +1,20 @@
 "#holder":{
 	top: Alloy.CFG.top
 }
+
+"Button": {
+	width: 32,
+	height: 32
+}
+
+"#settingsButton": {
+	right: 10,
+	backgroundImage: "/images/icons/settings-75.png"
+}
+"#switchButton":{
+	backgroundImage: "/images/icons/directions.png"
+}
+"#refreshButton":{
+	left: 10,
+	backgroundImage:"/images/icons/reload-75.png"
+}
